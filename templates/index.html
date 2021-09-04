@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Captioning</title>
+	<!-- CSS only -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../static/index1.css">
+</head>
+<body>
+	<section id="header">
+        <div  id="head">
+            Image Captioning Project
+        </div>
+    </section>
+	<div class="container" style="margin-left: 10%;">
+
+		<!-- <div class="jumbotron">
+			<div class="container">
+				<h1 class="heading"> Image Captioning</h1>
+				<p> Upload your image to generate a caption... </p>
+			</div>
+		</div> -->
+		<form class="form-inline" method="POST" action="/" enctype="multipart/form-data"> 
+			<label><b> Image : &nbsp;&nbsp; </b></label>
+			<input class="form-control" type="file" name="userfile" placeholder="Your image">
+			<button type="submit" class="btn btn-primary"> Submit</button>
+		</form>
+
+		<br>
+		<br>
+
+		{% if your_result %}
+
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="{{your_result['image']}}"  height="300px">
+				</div>
+				<div class="col-sm-8">
+					<p class="text"> Generated Caption : </p>
+			 		<p> <b>{{ your_result['caption'] }} </b> </p>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+	<section id="footer">
+        <div  id="foot">
+            Made with ❤ by Harsh and Lepsy 
+        </div>
+    </section>
+</body>
+</html>

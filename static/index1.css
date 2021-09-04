@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+#head{
+    text-align: center;
+    background-color: #010A43;
+    color: #fff;
+    padding: 1.5%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 1%;
+}
+
+#header{
+    text-align: center;
+}
+
+#footer{
+    bottom: 0;
+    position: absolute;
+    width: 96%;
+    text-align: center;
+    padding: 1%;
+    background-color: #010A43;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 1%;
+}
+
+#part1{
+    width: 45%;
+    background-color: #FEF6FB;
+    color: black;
+    height: 520px;
+    margin: 2%;
+    border: 2px solid black;
+}
+
+#body{
+    text-align: center;
+    border: 2px solid black;
+    margin: 2% 10% 2% 10%;
+    height: 400px;
+    padding: 3%;
+}
+
+input{
+    font-size: 1.5rem;
+    border: 2px solid black;
+}
+
+button{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%;
+    background-color: #010A43;
+    color: #fff;
+}
